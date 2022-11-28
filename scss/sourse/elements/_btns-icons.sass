@@ -1,0 +1,20 @@
+
+.close-btn
+	@include icoEl(45px, 45px, "../images/controls/close-black.svg")
+	cursor: pointer
+	&:hover
+		background-image: url("../images/controls/close-orange.svg")
+
+.hamburger-btn
+	@include icoEl(30px, 30px, "../images/controls/hamburger-white.svg", middle, contain, center right)
+	cursor: pointer
+	&:hover
+		background-image: url("../images/controls/hamburger-orange.svg")
+
+.search-btn
+	@include icoEl(30px,30px, "../images/icons/loop-white.svg")
+	&:hover
+		background-image: url("../images/icons/loop-orange.svg")
+.btn-back
+	&:hover
+		color: $greenColor

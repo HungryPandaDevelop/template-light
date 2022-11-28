@@ -1,0 +1,47 @@
+footer
+  .main-grid
+    .footer-info.col-3.col-md-12
+      .logo-container
+        a.logo(href="./index.html")
+          img(src="/images/logo.jpg")
+      .copyright 
+        |Мы - команда профессиональных рекрутеров, исследующих и развивающих отраслевоай поиск в области подбора работы и персонала. Мы преобразовываем обрасль путем применения инновационных решений.
+
+    nav.col-2.col-md-4.col-xs-12
+      h3 Портал
+      ul
+        each val in ["О нас","Новости","Контакты"]
+          li  
+            a(href="#") 
+              = val 
+    nav.col-2.col-md-4.col-xs-12
+      h3 Портал
+      ul
+        each val in ["О нас","Новости","Контакты"]
+          li  
+            a(href="#") 
+              = val 
+    nav.col-2.col-md-4.col-xs-12
+      h3 Портал
+      ul
+        each val in ["О нас","Новости","Контакты"]
+          li  
+            a(href="#") 
+              = val 
+    .col-3.footer-contacts.col-md-6.col-xs-12
+      p Мы будем признательны за вашу помощь по улучшению функционала портала. Ждем ваших предложений: 
+      p 
+        a(href="#") general@staff2go.com 
+    .col-3.col-md-6.col-xs-12
+      .links
+        div
+          a(href="#") Пользовательское соглашение
+        div
+          a(href="#") Политика конфиденциальности
+    .social-container.col-5.col-md-6.col-xs-12
+      +social(["vw","tlw","wzw"])
+    .col-4.col-md-6.col-xs-12
+      .create
+        a(href="#") 
+          |Создание сайта Style You
+

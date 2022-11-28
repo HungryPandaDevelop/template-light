@@ -1,0 +1,48 @@
+$headerHeight: 60px
+.stub
+	height: $headerHeight
+header
+	@include positionElement(100%, $headerHeight, 0, auto, left, top, 3, fixed )
+	color: $whiteColor
+	background-color: $blackColor
+	font-size: $smallSize
+	.main-grid
+		height: 100%
+	a
+		text-decoration: none
+	.btn
+		font-size: $smallSize
+		padding: 3px 15px
+		min-width: auto
+
+	.ico-in i img
+		width: 30px
+		height: 30px
+		margin-top: -10px
+		margin-bottom: -10px
+	.hamburger-btn
+		margin-left: auto
+.nav-header
+	display: flex
+	justify-content: space-between
+	width: 100%
+	font-size: $mediumSize
+	a
+		&:hover
+			color: $greenColor
+.logo
+	position: relative
+	display: flex
+	a
+		margin: auto 0
+
+	img
+		width: 100%
+		max-width: 60px
+
+.feedback-header
+	margin-left: auto
+	a
+		margin-left: 15px
+.phone-header
+	font-size: $mediumSize

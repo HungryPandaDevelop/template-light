@@ -1,0 +1,23 @@
+.main-home
+  height: calc(100vh - 60px)
+  min-height: 620px
+  background-color: $blackColor
+  position: relative
+  color: $whiteColor
+
+  h1
+    font-size: $hugeSize
+    margin: 0
+    margin-bottom: 30px
+    color: inherit
+  .main-home-info
+    padding-top: 20vh
+  .main-home-text
+    font-size: $mediumSize
+    font-weight: 300
+    margin: 0 0 60px
+  .main-home-content
+    position: relative
+
+.main-home-img
+  @include positionElement(100%,100%,0,0)

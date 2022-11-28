@@ -1,0 +1,19 @@
+header
+	.main-grid
+		.vertical-align.col-1
+			a.logo(href="#") 
+				img(src="/images/logo.jpg", alt="")
+		.vertical-align.col-5
+			ul.ln.nav-header
+				each val in ["Главная", "Новости", "О компании", "Контакты"]
+					li 
+						a(href="#")= val
+		.vertical-align.col-5
+			.feedback-header
+				a.phone-header(href="#") 8 495 777 77 77
+				a.btn-header(href="#").btn.btn--orange Консультация 
+		.vertical-align.col-1
+			a(href="#").search-btn
+		.vertical-align.col-1.hidden
+				a(href="#").hamburger-btn.element-btn(data-element="0")
+

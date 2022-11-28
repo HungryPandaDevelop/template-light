@@ -1,0 +1,18 @@
++popup-template(0,false,false,0, 'menu-hamburger')
+	nav.popup-nav
+		ul.ln
+			each val in ["Главная", "Вакансии / Резюме","О нас","Контакты"]
+				li
+						a(href="#")= val
+	.popup-feedback
+		.container
+			.feedback-phone
+				a(href="tel:+88005559810" ) +7 (921) 789 - 65 - 31
+			.feedback-social
+			+social(["v","tl","wz"]) 
+	.popup-bottom
+		.logo-container
+			a.logo(href="./index.html")
+				img(src="/images/logo.svg")
+		.copyright
+			|Мы - команда профессиональных рекрутеров, исследующих и развивающих отраслевоай поиск в области подбора работы и персонала. Мы преобразовываем обрасль путем применения инновационных решений.
