@@ -1,3 +1,8 @@
-+popup-template(1, "Консультация","Благодарим за обращение. Наш менеджер перезвонит вам в ближайшее время.") 
-	- var backCallField = [["text","Ваше имя*","col-12"],["phone","col-12"],["sumbit","О","col-12"],["checkbox","Я согласен(-на) на обработку персональных данных ","col-12"],["submit","btn btn--yellow-green btn-send","col-12"]];
-	+form(backCallField)
++popup-template(1, ) 
+	.col-6.col-md-12.form-default
+		h2 Консультация
+		+inputText('Ваше имя','form-line')
+		+inputEmail('Ваш Email','form-line')
+		+inputPhone('Ваш телефон','form-line')
+		+inputCheckbox(false,['Я даю свое согласие на обработку персональных данных'])
+		+inputSubmit('Отправить', 'btn--green')

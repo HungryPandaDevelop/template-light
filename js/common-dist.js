@@ -29,47 +29,28 @@ owlGallery.owlCarousel({
   }
 });
 
-let owlDetail = $('.owl-detail-main');
 
-owlDetail.owlCarousel({
-  items: 1,
-  nav: true,
-  dots: true
-});
 
-let owlPartners = $('.owl-partners');
 
-owlPartners.owlCarousel({
-  dots:  false,
-  autoplay: true,
-  autoplayTimeout: 1001,
-  smartSpeed: 500,
-  loop: true,
-  responsive:{
-    0:{
-      items:2
-    },
-    567:{
-      items: 4,
-    },
-    769:{
-      items: 7,
-    }
-}
-});
 
-if($(window).width() < 820){
+if($(window).width() < 786){
   let owlTablet = $('.owl-tablet');
 
   owlTablet.owlCarousel({
-    dots: true,
+    dots: false,
     margin: 0,
+    stagePadding: 45,
     responsive:{
       0:{
-        items:1
+        items:1,
+        margin: 15
       },
       576:{
         items: 2,
+        margin: 15
+      },
+      786:{
+        items: 4,
         margin: 15
       }
     }
@@ -86,7 +67,7 @@ if($(window).width() < 576){
         items:1,
         margin: 15
       },
-      415:{
+      576:{
         items: 2,
         margin: 15
       }

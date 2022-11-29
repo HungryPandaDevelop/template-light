@@ -14,13 +14,9 @@ header
 		font-size: $smallSize
 		padding: 3px 15px
 		min-width: auto
-
-	.ico-in i img
-		width: 30px
-		height: 30px
-		margin-top: -10px
-		margin-bottom: -10px
 	.hamburger-btn
+		margin-left: auto
+	.search-btn
 		margin-left: auto
 .nav-header
 	display: flex
@@ -46,3 +42,6 @@ header
 		margin-left: 15px
 .phone-header
 	font-size: $mediumSize
+@media (max-width: 576px)
+	.phone-header
+		display: none
