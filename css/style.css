@@ -2590,6 +2590,25 @@ footer .nav-second {
   margin: 0 0 15px;
 }
 
+.partners {
+  position: relative;
+  overflow: hidden;
+}
+.partners-container {
+  text-align: center;
+}
+
+.partners-item {
+  display: inline-block;
+  margin: 0 15px;
+}
+.partners-item img {
+  width: 130px;
+  height: 110px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .feedback-home {
   background-color: #fba72a;
   color: #ffffff;

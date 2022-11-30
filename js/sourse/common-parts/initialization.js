@@ -73,17 +73,23 @@ if($(window).width() < 576){
   });
 }
 
-if($(window).width() < 567){
-  let owlBanners = $('.owl-banners');
+let owlPartners = $('.owl-partners');
 
-  owlBanners.owlCarousel({
-    dots: true,
-    responsive:{
-      0:{
-        items:1,
-        margin: 15
-
-      }
+owlPartners.owlCarousel({
+  dots:  false,
+  autoplay: true,
+  autoplayTimeout: 1001,
+  smartSpeed: 500,
+  loop: true,
+  responsive:{
+    0:{
+      items:2
+    },
+    567:{
+      items: 4,
+    },
+    992:{
+      items: 7,
     }
-  });
 }
+});
