@@ -30,6 +30,7 @@
     items: 4,
     dots: false,
     nav: false,
+    дщщ
     smartSpeed: 200,
     slideSpeed: 500,
     slideBy: 4,

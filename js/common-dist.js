@@ -9,28 +9,15 @@ owlMain.owlCarousel({
   margin: 30
 });
 
-let owlGallery = $('.market-owl');
+let owlDetailMain = $('.owl-detail-main');
 
-owlGallery.owlCarousel({
+owlDetailMain.owlCarousel({
   nav: true,
   dots: false,
   padding: 0,
   margin: 30,
-  responsive:{
-    0:{
-      items:1
-    },
-    768:{
-      items: 3,
-    },
-    992:{
-      items: 4,
-    }
-  }
+  items: 1,
 });
-
-
-
 
 
 if($(window).width() < 786){
@@ -367,5 +354,3 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
   },1500);
   
 }, false ); 
-
-//# sourceMappingURL=common-dist.js.map
